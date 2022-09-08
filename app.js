@@ -11,6 +11,10 @@ app.get('/names', (req, res) => {
 	res.send('Deva saikia');
 });
 
+app.get('/email', (req, res) => {
+	res.send('devasaikia.mca@gmail.com');
+});
+
 app.listen(5000, () => {
 	console.log(`App is ruuning on port 5000`);
 });

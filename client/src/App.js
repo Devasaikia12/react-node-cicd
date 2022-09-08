@@ -4,9 +4,11 @@ import './App.css';
 
 function App() {
 	const [userName, setUserName] = useState('');
+	const [email, setEmail] = useState('');
 
 	useEffect(() => {
 		getUsername();
+		getEmail();
 	}, []);
 	const getUsername = async () => {
 		const response = await axios.get('/names');
@@ -14,9 +16,15 @@ function App() {
 		setUserName(response.data);
 	};
 
+	const getEmail = async () => {
+		const res = await axios.get('/email');
+		setEmail(res.data);
+	};
+
 	return (
 		<div className="">
 			<h1>My Name is {userName}</h1>
+			<h4>My Email is {email}</h4>
 		</div>
 	);
 }
