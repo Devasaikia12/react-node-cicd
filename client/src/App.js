@@ -23,8 +23,8 @@ function App() {
 
 	return (
 		<div className="">
-			<h1>My Name is {userName}</h1>
-			<h4>My Email is {email}</h4>
+			<h1>Name: {userName}</h1>
+			<h4>Email: {email}</h4>
 		</div>
 	);
 }
