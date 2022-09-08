@@ -15,6 +15,10 @@ app.get('/email', (req, res) => {
 	res.send('devasaikia.mca@gmail.com');
 });
 
+app.get('/', (req, res) => {
+	res.send('<h1>Hello from express');
+});
+
 app.listen(5000, () => {
 	console.log(`App is ruuning on port 5000`);
 });
