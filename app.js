@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 // express midlerware for static file
 app.use(express.static(path.join(__dirname, '/client/build')));
 app.get('/names', (req, res) => {
-	res.send('Twilo');
+	res.send('Deva saikia');
 });
 
 app.listen(5000, () => {
